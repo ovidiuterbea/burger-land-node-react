@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:14
+    container_name: burgerland_db
+    restart: always
+    environment:
+      POSTGRES_USER: someuser
+      POSTGRES_PASSWORD: somepassword
+      POSTGRES_DB: burgerland
+    ports:
+      - '5432:5432'
+    volumes:
+      - burgerland_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  burgerland_postgres_data:
