@@ -1,0 +1,112 @@
+.bookingPageContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #eafcff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bookingPageTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  background-color: #ffffff;
+  border: 2px dotted #03a9f4;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.bookingForm label {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.bookingForm input,
+.bookingForm select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createBookingButton {
+  background-color: #03a9f4;
+  border: none;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 1.75rem;
+}
+
+.createBookingButton:hover {
+  background-color: #29b6f6;
+}
+
+.bookingList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.bookingCard {
+  background-color: #fff;
+  border: 2px solid #bbdefb;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+  position: relative;
+  color: #333;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookingType {
+  background-color: #bbdefb;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #003c8f;
+  margin-bottom: 0.5rem;
+}
+
+.bookingInfo {
+  margin-bottom: 0.5rem;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  margin: 1rem 0rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .formGroup {
+    min-width: auto;
+  }
+
+  .createBookingButton {
+    margin-top: 0.5rem;
+  }
+}

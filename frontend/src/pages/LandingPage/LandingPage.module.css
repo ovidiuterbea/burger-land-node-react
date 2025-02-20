@@ -1,0 +1,118 @@
+.landingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(160deg, #ffd54f 0%, #ffb300 100%);
+  color: #333;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 245, 200, 0.5);
+}
+
+.heroSubtitle {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+}
+
+.parkInfo {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.callToAction {
+  background-color: #ff5722;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.callToAction:hover {
+  background-color: #ff7043;
+}
+
+.burgerArt {
+  margin-top: 2rem;
+  width: 250px;
+  animation: floatBurger 3s ease-in-out infinite;
+}
+
+@keyframes floatBurger {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .landingContainer {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.4rem;
+  }
+
+  .parkInfo {
+    font-size: 1.1rem;
+  }
+
+  .callToAction {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .burgerArt {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .parkInfo {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .callToAction {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .burgerArt {
+    width: 150px;
+  }
+}
